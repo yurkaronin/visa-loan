@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  background-color: var(--col-a1);
+  color: var(--col-b1);
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  padding: 1.1em;
+  width: max-content;
+  transition: 0.3s;
+  border-radius: 5px;
+  min-height: 56px;
+  min-width: 340px;
+  text-align: center;
+
+  &:hover,
+  &:focus,
+  &:active {
+  background-color: var(--col-a2);
+  }
+}

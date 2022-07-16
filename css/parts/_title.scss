@@ -1,0 +1,17 @@
+.title {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  color: var(--col-b1);
+  font-family: var(--ff-2);
+  text-align-last: left;
+
+  &--big {
+    font-size: 48px;
+  }
+  &--small {
+    font-size: 24px;
+  }
+}

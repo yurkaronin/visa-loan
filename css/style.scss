@@ -1,0 +1,33 @@
+:root {
+  --ff-1: 'Open Sans', sans-serif;
+  --ff-2: 'Manrope', sans-serif;
+  --ff-3: 'Montserrat', sans-serif;
+  --ff-4: 'Circe', arial, sans-serif;
+
+  --col-b1: #0F0E42;
+  --col-b2: #07317E;
+  --col-b3: #1146A6;
+  --col-b4: #1A87D8;
+
+  --col-w1: #FFFFFF;
+  --col-w3: #F2F6FD;
+  --col-w4: #CED6E4;
+  --col-w5: #8C8E9B;
+
+  --col-a1: #FCC01A;
+  --col-a2: #FFD359;
+  --col-a3: #FF3D00;
+
+}
+
+@import "parts/fonts";
+@import "parts/global";
+
+@import "parts/wrapper";
+@import "parts/button";
+@import "parts/title";
+@import "parts/subtitle";
+@import "parts/logo";
+
+
+
