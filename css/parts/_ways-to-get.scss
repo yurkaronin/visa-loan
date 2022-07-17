@@ -1,0 +1,37 @@
+.ways-to-get {
+  padding: 105px 0 130px;
+  background-color: var(--col-w1);
+  color: var(--col-b1);
+
+  &__top {}
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__list-item {
+    width: calc(100% / 3 - 20px);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    p {
+      margin: 0;
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.4;
+      color: inherit;
+
+      strong {
+        display: block;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+      }
+    }
+  }
+}

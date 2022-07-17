@@ -510,4 +510,36 @@ button {
   font-size: 24px;
   line-height: 28px;
   color: var(--col-b3);
+}
+
+.ways-to-get {
+  padding: 105px 0 130px;
+  background-color: var(--col-w1);
+  color: var(--col-b1);
+}
+.ways-to-get__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.ways-to-get__list-item {
+  width: calc(33.3333333333% - 20px);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.ways-to-get__list-item p {
+  margin: 0;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  color: inherit;
+}
+.ways-to-get__list-item p strong {
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
 }/*# sourceMappingURL=style.css.map */
