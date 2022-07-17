@@ -1,0 +1,28 @@
+.header {
+  padding: 20px 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      gap: 16px;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    a {
+      font-family: var(--ff-2);
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      color: var(--col-b5);
+      text-decoration: none;
+    }
+  }
+}

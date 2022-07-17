@@ -8,11 +8,14 @@
   --col-b2: #07317E;
   --col-b3: #1146A6;
   --col-b4: #1A87D8;
+  --col-b5: #08327F;
+
 
   --col-w1: #FFFFFF;
   --col-w3: #F2F6FD;
   --col-w4: #CED6E4;
   --col-w5: #8C8E9B;
+  --col-w6: #2C2C2C;
 
   --col-a1: #FCC01A;
   --col-a2: #FFD359;
@@ -32,3 +35,5 @@
 @import "parts/logo";
 @import "parts/range";
 // смысловые секции
+@import "parts/header";
+@import "parts/first";
