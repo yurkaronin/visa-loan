@@ -15,7 +15,7 @@
   &__list-item {
     width: calc(100% / 3 - 20px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 25px;
 
     p {
