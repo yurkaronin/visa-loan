@@ -32,25 +32,28 @@
     <legend>Необходимая сумма, ₽</legend>
     <div class="filter-price-range">
 
-      <div class="price-control">
-        <!-- полоска  -->
+      <input class="price-value" type="number" name="price" id="filter-price" value="1000" oninput="fun2()">
+
+      <input class="range" value="1000" type="range" min="1000" max="500000" step="1000" oninput="fun1()">
+      <p id="one"></p>
+
+      <!-- <div class="price-control">
+        полоска
         <div class="scale">
-          <!-- прогресс  -->
+          прогресс
           <div class="bar"></div>
         </div>
-        <!-- кнопка-ползунок  -->
+        кнопка-ползунок
         <div class="range-toggle" style="left: 9px;">
           <img src="img/bg-icon.svg" alt="">
         </div>
-      </div>
-
-      <input class="price-value" type="text" name="price" id="filter-price" value="0" style="pointer-events: auto;">
+      </div> -->
 
     </div>
 
   </fieldset>
 
-  <!-- <input class="range" type="range" min="0" max="100" value="50" name="range" step="1"/> -->
+
 
   <script src="js/script.js"></script>
 </body>

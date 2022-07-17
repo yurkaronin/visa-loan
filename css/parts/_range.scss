@@ -1,4 +1,4 @@
-.price-control {
+/* .price-control {
   position: relative;
   margin-top: 17px;
   margin-bottom: 8px;
@@ -43,3 +43,55 @@
     width: 16px;
   }
 }
+ */
+
+ .price-value  {
+  width: 200px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+range-thumb() {
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+     box-sizing: content-box;
+    {block}
+  }
+  &::-moz-range-thumb {
+    {block}
+  }
+  &::-ms-thumb {
+    {block}
+    display: inline-block;
+    margin-top: 5px; /* note: different margin-top for IE */
+  }
+ }
+
+ range-track() {
+  &::-webkit-slider-runnable-track {
+    border-color: transparent;
+    color: transparent;
+    {block}
+  }
+
+  &::-moz-range-track {
+    {block}
+  }
+
+  &::-ms-track {
+     border-color: transparent;
+     color: transparent;
+     {block}
+  }
+ }
+
+ fill() {
+   &::-ms-fill-lower {
+     {block}
+   }
+
+   &::-moz-range-progress {
+     {block}
+   }
+ }
