@@ -183,6 +183,30 @@ button {
   line-height: inherit;
 }
 
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  color: var(--col-b1);
+  font-family: var(--ff-2);
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.title--big {
+  font-size: 48px;
+}
+.title--small {
+  font-size: 24px;
+}
+
 .wrapper {
   max-width: 1416px;
   padding: 0 40px;
@@ -212,24 +236,6 @@ button {
 }
 .button:hover, .button:focus, .button:active {
   background-color: var(--col-a2);
-}
-
-.title {
-  margin-top: 0;
-  margin-bottom: 0.5em;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 1.2;
-  color: var(--col-b1);
-  font-family: var(--ff-2);
-  -moz-text-align-last: left;
-       text-align-last: left;
-}
-.title--big {
-  font-size: 48px;
-}
-.title--small {
-  font-size: 24px;
 }
 
 .subtitle {
@@ -302,10 +308,4 @@ button {
     width: 16px;
   }
 }
- */
-input[type=range] {
-  width: 200px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}/*# sourceMappingURL=style.css.map */
+ *//*# sourceMappingURL=style.css.map */

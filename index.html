@@ -18,40 +18,30 @@
 
 <body>
 
-  <div class="logo">
-    <a href="#">
-      <img src="img/logo.svg" alt="логотип Виза займ" width="164" height="50">
-    </a>
-  </div>
+  <header class="header">
+    <div class="wrapper">
+      <div class="header__logo logo">
+        <a href="#">
+          <img src="img/logo.svg" alt="логотип Виза займ" width="164" height="50">
+        </a>
+      </div>
+      <div class="header__user-data"></div>
+      <div class="header__nav navigation">
+        <nav>
+          <ul class="list-reset">
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+
   <h1 class="title">Тест заголовка</h1>
 
   <a href="#" class="button">Ссылка</a>
   <button class="button" type="button">Кнопка</button>
-
-  <fieldset class="filter-group">
-    <legend>Необходимая сумма, ₽</legend>
-    <div class="filter-price-range">
-
-      <input class="price-value" type="number" name="price" id="filter-price" value="1000" oninput="fun2()">
-
-      <input class="range" value="1000" type="range" min="1000" max="500000" step="1000" oninput="fun1()">
-      <p id="one"></p>
-
-      <!-- <div class="price-control">
-        полоска
-        <div class="scale">
-          прогресс
-          <div class="bar"></div>
-        </div>
-        кнопка-ползунок
-        <div class="range-toggle" style="left: 9px;">
-          <img src="img/bg-icon.svg" alt="">
-        </div>
-      </div> -->
-
-    </div>
-
-  </fieldset>
 
 
 

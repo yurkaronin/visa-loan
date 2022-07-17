@@ -22,10 +22,13 @@
 
 @import "parts/fonts";
 @import "parts/global";
-
+// служебные классы
+@import "parts/list-reset";
+// типовые классы
+@import "parts/title";
 @import "parts/wrapper";
 @import "parts/button";
-@import "parts/title";
 @import "parts/subtitle";
 @import "parts/logo";
 @import "parts/range";
+// смысловые секции
