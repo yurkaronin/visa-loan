@@ -885,6 +885,7 @@ button {
   border-bottom: 1px solid;
   border-color: var(--col-w4);
   max-width: 230px;
+  text-align: center;
 }
 .card-list__links a {
   font-weight: 500;
