@@ -38,6 +38,7 @@
     border-color: var(--col-w4);
     max-width: 230px;
     text-align: center;
+
     a {
       font-weight: 500;
       font-size: 11px;
@@ -45,11 +46,17 @@
       text-transform: uppercase;
       color: #1A87D8;
       text-decoration: none;
+      padding: 0 7px;
+      display: inline;
       position: relative;
+      word-break: break-all;
 
       &:after {
         content: "\\";
         color: #1A87D8;
+        position: absolute;
+        right: 0;
+        top: 2px;
       }
 
       &:last-child {

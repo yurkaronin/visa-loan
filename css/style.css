@@ -894,11 +894,17 @@ button {
   text-transform: uppercase;
   color: #1A87D8;
   text-decoration: none;
+  padding: 0 7px;
+  display: inline;
   position: relative;
+  word-break: break-all;
 }
 .card-list__links a:after {
   content: "\\";
   color: #1A87D8;
+  position: absolute;
+  right: 0;
+  top: 2px;
 }
 .card-list__links a:last-child:after {
   display: none;
