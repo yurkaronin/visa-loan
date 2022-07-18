@@ -12,5 +12,6 @@ noUiSlider.create(slider, {
 slider.noUiSlider.set(30500);
 
 slider.noUiSlider.on('update', function (values, handle) {
-  sumInput.value = values[handle];
+  sumInput.value = Math.floor(values[handle]);
+  console.log(sumInput.value);
 });
