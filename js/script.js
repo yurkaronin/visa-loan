@@ -1,21 +1,16 @@
+// Глобальные переменные
 let slider = document.getElementById('slider');
 let sumInput = document.querySelector('.price-value');
 
-noUiSlider.create(slider, {
-  start: [1000],
-  connect: [true, false],
-  step: 500,
-  range: {
-    'min': 1000,
-    'max': 500000
-  }
+let header = document.querySelector('.js-header');
+let headerHeight = header.clientHeight;
 
-});
+// функция подключения файлов со скриптами
+function include(url) {
+  var script = document.createElement('script');
+  script.src = url;
+  document.getElementsByTagName('head')[0].appendChild(script);
+}
 
-slider.noUiSlider.set(30500);
-
-slider.noUiSlider.on('update', function (values, handle) {
-  sumInput.value = values[handle];
-});
-
-
+include("./js/parts/range-slider.js");
+include("./js/parts/header.js");
