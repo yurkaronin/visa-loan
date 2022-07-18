@@ -1,0 +1,38 @@
+.footer {
+  background: var(--col-b1);
+  color: var(--col-w1);
+  border-radius: 1px;
+  padding: 52px 0;
+  font-size: 1rem;
+
+  &__wrapper {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__description {
+    font-size: 0.75em;
+  }
+
+  &__contacts {
+    font-weight: 600;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      font-weight: inherit;
+    }
+  }
+
+  &__copyright {
+    p {
+      font-family: 1rem;
+      margin-bottom: 1em;
+    }
+  }
+}

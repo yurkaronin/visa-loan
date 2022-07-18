@@ -3,7 +3,9 @@
   background-color: var(--col-w1);
   color: var(--col-b1);
 
-  &__top {}
+  .title {
+    margin-bottom: 1.4em;
+  }
 
   &__list {
     display: flex;
@@ -16,7 +18,12 @@
     width: calc(100% / 3 - 20px);
     display: flex;
     align-items: flex-start;
-    gap: 25px;
+    gap: 16px 25px;
+
+    svg {
+      width: 120px;
+      height: 120px;
+    }
 
     p {
       margin: 0;
@@ -32,6 +39,42 @@
         font-size: 24px;
         line-height: 1.2;
       }
+    }
+
+    a {
+      font-family: inherit;
+      display: block;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.2;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    &--vert {
+      flex-direction: column;
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--col-w5);
+        min-height: 51px;
+      }
+    }
+  }
+
+  .footnote {
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    p {
+      color: var(--col-b3);
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.2;
+      min-height: initial;
     }
   }
 }

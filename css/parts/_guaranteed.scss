@@ -1,0 +1,53 @@
+.guaranteed {
+  background-color: var(--col-w3);
+  color: var(--col-b1);
+  padding: 65px 0;
+  font-family: var(--ff-2);
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__top {
+    width: calc(50% - 12px);
+  }
+
+  &__list {
+    width: calc(50% - 12px);
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    li {
+      width: calc(100% / 3 - 16px);
+    }
+
+    p {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.2;
+      color: inherit;
+      margin: 0;
+    }
+
+    b {
+      display: block;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1.2;
+      color: var(--col-b2);
+      margin-bottom: 0.2em;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+  }
+}

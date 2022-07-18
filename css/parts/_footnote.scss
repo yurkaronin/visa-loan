@@ -1,0 +1,22 @@
+.footnote {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: max-content;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 300;
+    font-family: inherit;
+    color: inherit;
+    margin: 0;
+  }
+
+
+}
