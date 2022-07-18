@@ -44,7 +44,7 @@
 
     a {
       font-family: inherit;
-      display: block;
+      display: inline-block;
       font-weight: 600;
       font-size: 24px;
       line-height: 1.2;
@@ -52,6 +52,7 @@
       text-decoration: none;
       position: relative;
       transition: all 0.3s;
+      margin-bottom: 1em;
       &:hover,
       &:focus {
         color: var(--col-b3);
@@ -76,11 +77,13 @@
         line-height: 1.6;
         color: var(--col-w5);
         min-height: 51px;
+        margin-bottom: 1.1em;
       }
     }
   }
 
   .footnote {
+    margin-top: 1.19em;
     svg {
       width: 24px;
       height: 24px;
@@ -92,6 +95,7 @@
       font-size: 14px;
       line-height: 1.2;
       min-height: initial;
+      margin-bottom: 0;
     }
   }
 }

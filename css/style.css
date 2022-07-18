@@ -589,7 +589,7 @@ button {
 }
 .ways-to-get__list-item a {
   font-family: inherit;
-  display: block;
+  display: inline-block;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
@@ -597,6 +597,7 @@ button {
   text-decoration: none;
   position: relative;
   transition: all 0.3s;
+  margin-bottom: 1em;
 }
 .ways-to-get__list-item a:hover, .ways-to-get__list-item a:focus {
   color: var(--col-b3);
@@ -619,6 +620,10 @@ button {
   line-height: 1.6;
   color: var(--col-w5);
   min-height: 51px;
+  margin-bottom: 1.1em;
+}
+.ways-to-get .footnote {
+  margin-top: 1.19em;
 }
 .ways-to-get .footnote svg {
   width: 24px;
@@ -630,6 +635,7 @@ button {
   font-size: 14px;
   line-height: 1.2;
   min-height: initial;
+  margin-bottom: 0;
 }
 
 .ways-to-get {
@@ -775,4 +781,197 @@ button {
 .footer__copyright p {
   font-family: 1rem;
   margin-bottom: 1.3em;
+}
+
+@media (max-width: 1024px) {
+  .header__logo {
+    margin-left: 0;
+  }
+  .first__form-group--bottom {
+    gap: 12px 27px;
+  }
+  .first__form-item {
+    width: calc(50% - 14px);
+  }
+  .first__form-item--last {
+    margin: 0 auto;
+  }
+  .first__footer-list {
+    justify-content: center;
+  }
+  .ways-to-get__list-item {
+    width: calc(50% - 15px);
+  }
+  .guaranteed__top {
+    width: 100%;
+  }
+  .ways-to-get {
+    padding: 70px 0;
+  }
+  .ways-to-get__list {
+    flex-direction: column;
+  }
+  .ways-to-get__list-item {
+    width: 100%;
+  }
+  .ways-to-get__list-item--vert {
+    flex-direction: row;
+  }
+  .ways-to-get__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .ways-to-get__list-item svg {
+    width: 78px;
+    height: 78px;
+  }
+  .ways-to-get__list-item--vert p {
+    min-height: initial;
+  }
+  .ways-to-get__list-item a {
+    margin-bottom: 0.7em;
+  }
+  .guaranteed__list {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .first__form-item {
+    width: 100%;
+  }
+  .first__footer-list {
+    display: none;
+  }
+  .guaranteed__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .ways-to-get__item-wrapper {
+    width: calc(100% - 100px);
+  }
+}
+@media (max-width: 625px) {
+  .first__form-label--top {
+    font-size: 16px;
+  }
+  .first__form-input[type=number] {
+    width: 112px;
+  }
+  .first__form-group {
+    align-items: center;
+  }
+  .first__form-group--bottom {
+    gap: 18px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .ways-to-get__list-item p strong {
+    font-size: 20px;
+  }
+  .guaranteed__list li {
+    width: 100%;
+  }
+  .guaranteed__list p {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  .guaranteed__list ul {
+    gap: 45px;
+  }
+  .ways-to-get__list-item a {
+    margin-bottom: 12px;
+  }
+  .ways-to-get__list {
+    gap: 37px;
+  }
+  .header {
+    padding: 9px 0 4px;
+  }
+  .first {
+    padding-top: 31px;
+  }
+  .first .title {
+    font-size: 32px;
+    margin-bottom: 0.8em;
+  }
+  .first .title span {
+    font-size: 18px;
+  }
+  .first__form {
+    padding: 20px 14px 40px;
+  }
+  .first__form-group {
+    margin-bottom: 15px;
+  }
+  .first__form-tooltips {
+    margin-top: 23px;
+  }
+  .first__form-group {
+    margin-bottom: 14px;
+  }
+  .first {
+    padding-bottom: 52px;
+  }
+  .ways-to-get {
+    padding: 56px 0 64px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .ways-to-get .title {
+    margin-bottom: 1.3em;
+  }
+  .ways-to-get__list-item p {
+    width: calc(100% - 100px);
+  }
+  .ways-to-get__list-item {
+    gap: 16px 12px;
+  }
+  .ways-to-get__list {
+    gap: 26px;
+  }
+  .guaranteed {
+    padding: 54px 0;
+  }
+  .guaranteed__top .title {
+    margin-bottom: 25px;
+  }
+  .guaranteed__top .text {
+    margin-bottom: 60px;
+  }
+  .guaranteed__bottom {
+    margin-top: 20px;
+  }
+  .ways-to-get--mod {
+    padding: 68px 0 38px;
+  }
+  .ways-to-get__list-item a {
+    font-size: 20px;
+  }
+  .ways-to-get__item-wrapper p {
+    width: 100%;
+  }
+  .ways-to-get--mod .ways-to-get__list {
+    gap: 27px;
+  }
+  .content__links {
+    margin-top: 35px;
+  }
+  .content__links a {
+    font-size: 15px;
+    margin-bottom: 9px;
+  }
+  .footer {
+    padding-top: 43px;
+  }
+  .content {
+    padding-bottom: 39px;
+  }
 }/*# sourceMappingURL=style.css.map */
