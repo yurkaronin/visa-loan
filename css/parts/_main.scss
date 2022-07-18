@@ -1,0 +1,7 @@
+.main {
+  background-color: var(--col-w1);
+  &--inner {
+    background-color: var(--col-w3);
+    padding-top: 28px;
+  }
+}

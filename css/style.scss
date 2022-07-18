@@ -35,13 +35,19 @@
 @import "parts/footnote";
 @import "parts/logo";
 @import "parts/range";
+
 // смысловые секции
+@import "parts/main";
+
 @import "parts/header";
 @import "parts/first";
 @import "parts/ways-to-get";
 @import "parts/guaranteed";
 @import "parts/content";
 @import "parts/footer";
+
+@import "parts/lead-preview";
+@import "parts/card-list";
 
 
 @media (max-width: 1024px) {
@@ -110,6 +116,10 @@
   .guaranteed__list {
     width: 100%;
   }
+
+  .card-list__item {
+    width: calc(100% / 3 - 16px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -134,6 +144,44 @@
 
   .ways-to-get__item-wrapper {
     width: calc(100% - 100px);
+  }
+
+  .card-list__item {
+    width: calc(50% - 8px);
+  }
+
+  .card-list__wrapper {
+    gap: 20px 15px;
+  }
+
+  .card-list__item-wrapper {
+    padding: 12px 8px 20px;
+  }
+
+  .card-list__button {
+    padding: 7px;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .lead-preview__title {
+    font-size: 22px !important;
+    margin-bottom: 8px;
+  }
+
+  .lead-preview__subtitle {
+    font-size: 16px !important;
+  }
+
+  .lead-preview__info {
+    font-size: 18px !important;
+  }
+
+  .lead-preview__content {
+    padding: 20px 16px;
   }
 }
 
@@ -300,6 +348,6 @@
 
   .logo {
     max-width: 144px;
-}
+  }
 
 }

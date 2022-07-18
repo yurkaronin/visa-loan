@@ -1,0 +1,34 @@
+.lead-preview {
+
+
+
+  &__content {
+    background-color: var(--col-w1);
+    color: var(--col-b1);
+    padding: 32px 40px;
+    border-radius: 5px;
+    margin-bottom: 39px;
+  }
+
+  &__title {
+    font-size: 32px;
+    color: inherit;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--col-w6);
+    margin-bottom: 24px;
+    display: block;
+
+  }
+
+  &__info {
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--col-b3);
+    display: block;
+  }
+}
