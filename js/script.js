@@ -1,12 +1,20 @@
+let slider = document.getElementById('slider');
+let sumInput = document.querySelector('.price-value');
 
-function fun1() {
-  let rangeInput = document.querySelector('.range');
-  let sumInput = document.querySelector('.price-value');
-	sumInput.value = rangeInput.value;
-}
+noUiSlider.create(slider, {
+  start: [1000],
+  connect: [true, false],
+  step: 500,
+  range: {
+    'min': 1000,
+    'max': 500000
+  }
 
-function fun2() {
-  let rangeInput = document.querySelector('.range');
-  let sumInput = document.querySelector('.price-value');
-	rangeInput.value = sumInput.value;
-}
+});
+
+slider.noUiSlider.set(30500);
+
+slider.noUiSlider.on('update', function (values, handle) {
+  console.log('wow');
+  sumInput.value = values[handle];
+});

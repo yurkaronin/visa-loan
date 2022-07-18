@@ -13,6 +13,7 @@
   <meta name="description"
     content="Виза-займ: удобный сервис быстрых займов до 100 000 ₽ на карту или наличными за 10 минут.">
 
+  <link href="libs/nouislider.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -48,11 +49,14 @@
 
             <div class="first__form-group first__form-group--top">
               <label class="first__form-label first__form-label--top" for="">Необходимая сумма, ₽</label>
-              <input class="first__form-input" type="number">
+              <input class="first__form-input price-value" type="number">
             </div>
 
             <div class="first__form-group first__form-group--medium">
-              <input class="first__form-input" type="range" name="" id="">
+              <!-- <input class="first__form-input" type="range" name="" id=""> -->
+
+              <!-- кастомный range  -->
+              <div class="first__form-range" id="slider"></div>
               <div class="first__form-tooltips">
                 <p><output name="min-result">1 000</output> ₽</p>
                 <p><output name="max-result">500 000</output> ₽</p>
@@ -348,7 +352,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="libs/nouislider.js"></script>
   <script src="js/script.js"></script>
 </body>
 
