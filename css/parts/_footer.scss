@@ -7,8 +7,9 @@
 
   &__wrapper {
     display: flex;
-    gap: 32px;
+    gap: 28px;
     flex-direction: column;
+    max-width: 1435px;
   }
 
   p {
@@ -16,7 +17,7 @@
   }
 
   &__description {
-    font-size: 0.75em;
+    font-size: 0.9em;
   }
 
   &__contacts {
@@ -30,9 +31,13 @@
   }
 
   &__copyright {
+    border-top: 1px solid var(--col-w1);
+    padding-top: 20px;
+    margin-top: 1px;
+
     p {
       font-family: 1rem;
-      margin-bottom: 1em;
+      margin-bottom: 1.3em;
     }
   }
 }

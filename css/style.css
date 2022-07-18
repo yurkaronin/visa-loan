@@ -193,7 +193,7 @@ button {
 
 .title {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.45em;
   font-weight: 600;
   font-size: 40px;
   line-height: 1.2;
@@ -210,8 +210,8 @@ button {
 }
 
 .wrapper {
-  max-width: 1416px;
-  padding: 0 40px;
+  max-width: 1396px;
+  padding: 0 50px;
   margin: 0 auto;
 }
 
@@ -248,7 +248,7 @@ button {
   line-height: 1.2;
   color: var(--col-w5);
   margin: 0;
-  margin-bottom: 0.75em;
+  margin-bottom: 0.55em;
   text-align: left;
 }
 
@@ -333,12 +333,15 @@ button {
 }
  */
 .header {
-  padding: 20px 0;
+  padding: 20px 0 18px;
 }
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header__logo {
+  margin-left: -20px;
 }
 .header__nav ul {
   display: flex;
@@ -370,12 +373,13 @@ button {
   line-height: 1.4;
   font-weight: 400;
   display: block;
+  margin-top: 0.3em;
 }
 .first__wrapper {
-  max-width: 1204px;
+  max-width: 1225px;
 }
 .first__form {
-  padding: 35px 24px 50px;
+  padding: 35px 24px 40px;
   background-color: var(--col-w3);
   border-radius: 5px;
   color: var(--col-b1);
@@ -384,9 +388,9 @@ button {
 .first__form-group {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 .first__form-group--top {
   flex-wrap: initial;
@@ -394,7 +398,7 @@ button {
 .first__form-group--bottom {
   gap: 0 27px;
   align-items: flex-end;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 .first__form-label {
   font-family: inherit;
@@ -474,7 +478,7 @@ button {
 }
 .first__form-item--last .footnote {
   position: absolute;
-  bottom: -22px;
+  bottom: -33px;
 }
 .first__form-button {
   width: 100%;
@@ -545,12 +549,12 @@ button {
 }
 
 .ways-to-get {
-  padding: 105px 0 130px;
+  padding: 103px 0 110px;
   background-color: var(--col-w1);
   color: var(--col-b1);
 }
 .ways-to-get .title {
-  margin-bottom: 1.4em;
+  margin-bottom: 1.7em;
 }
 .ways-to-get__list {
   display: flex;
@@ -581,6 +585,7 @@ button {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.2;
+  margin-bottom: 0.4em;
 }
 .ways-to-get__list-item a {
   font-family: inherit;
@@ -590,6 +595,21 @@ button {
   line-height: 1.2;
   color: inherit;
   text-decoration: none;
+  position: relative;
+  transition: all 0.3s;
+}
+.ways-to-get__list-item a:hover, .ways-to-get__list-item a:focus {
+  color: var(--col-b3);
+}
+.ways-to-get__list-item a:hover::after, .ways-to-get__list-item a:focus::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--col-b3);
+  bottom: 2px;
+  left: 0;
 }
 .ways-to-get__list-item--vert {
   flex-direction: column;
@@ -612,10 +632,17 @@ button {
   min-height: initial;
 }
 
+.ways-to-get {
+  padding-top: 107px;
+}
+.ways-to-get .title {
+  margin-bottom: 1.5em;
+}
+
 .guaranteed {
   background-color: var(--col-w3);
   color: var(--col-b1);
-  padding: 65px 0;
+  padding: 62px 0;
   font-family: var(--ff-2);
 }
 .guaranteed__wrapper {
@@ -652,7 +679,8 @@ button {
   font-size: 40px;
   line-height: 1.2;
   color: var(--col-b2);
-  margin-bottom: 0.2em;
+  margin-bottom: 0.1em;
+  margin-top: -0.6em;
 }
 .guaranteed__bottom {
   width: 100%;
@@ -661,7 +689,10 @@ button {
 .content {
   background-color: var(--col-w1);
   color: var(--col-b1);
-  padding: 52px 0;
+  padding: 26px 0 57px;
+}
+.content__wrapper {
+  max-width: 1435px;
 }
 .content__inner {
   font-size: 1rem;
@@ -669,7 +700,7 @@ button {
 .content__inner h3 {
   margin: 0;
   font-weight: 600;
-  font-size: inherit;
+  font-size: 16px;
   line-height: 1, 4;
   margin-bottom: 0.5em;
   margin-top: 2em;
@@ -718,14 +749,15 @@ button {
 }
 .footer__wrapper {
   display: flex;
-  gap: 32px;
+  gap: 28px;
   flex-direction: column;
+  max-width: 1435px;
 }
 .footer p {
   margin: 0;
 }
 .footer__description {
-  font-size: 0.75em;
+  font-size: 0.9em;
 }
 .footer__contacts {
   font-weight: 600;
@@ -735,7 +767,12 @@ button {
   text-decoration: none;
   font-weight: inherit;
 }
+.footer__copyright {
+  border-top: 1px solid var(--col-w1);
+  padding-top: 20px;
+  margin-top: 1px;
+}
 .footer__copyright p {
   font-family: 1rem;
-  margin-bottom: 1em;
+  margin-bottom: 1.3em;
 }/*# sourceMappingURL=style.css.map */

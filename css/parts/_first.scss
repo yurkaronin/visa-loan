@@ -12,15 +12,16 @@
       line-height: 1.4;
       font-weight: 400;
       display: block;
+      margin-top: 0.3em;
     }
   }
 
   &__wrapper {
-    max-width: calc(1124px + 40px + 40px);
+    max-width: 1225px;
   }
 
   &__form {
-    padding: 35px 24px 50px;
+    padding: 35px 24px 40px;
     background-color: var(--col-w3);
     border-radius: 5px;
     color: var(--col-b1);
@@ -30,9 +31,9 @@
   &__form-group {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
 
     &--top {
       flex-wrap: initial;
@@ -41,7 +42,7 @@
     &--bottom {
       gap: 0 27px;
       align-items: flex-end;
-      margin-bottom: 32px;
+      margin-bottom: 34px;
     }
   }
 
@@ -136,7 +137,7 @@
 
       .footnote {
         position: absolute;
-        bottom: -22px;
+        bottom: -33px;
       }
     }
   }

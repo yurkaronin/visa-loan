@@ -1,7 +1,11 @@
 .content {
   background-color: var(--col-w1);
   color: var(--col-b1);
-  padding: 52px 0;
+  padding: 26px 0 57px;
+
+  &__wrapper {
+    max-width: 1435px;
+  }
 
   &__inner {
     font-size: 1rem;
@@ -9,7 +13,7 @@
     h3 {
       margin: 0;
       font-weight: 600;
-      font-size: inherit;
+      font-size: 16px;
       line-height: 1, 4;
       margin-bottom: 0.5em;
       margin-top: 2em;

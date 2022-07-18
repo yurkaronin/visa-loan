@@ -15,6 +15,5 @@ noUiSlider.create(slider, {
 slider.noUiSlider.set(30500);
 
 slider.noUiSlider.on('update', function (values, handle) {
-  console.log('wow');
   sumInput.value = values[handle];
 });
